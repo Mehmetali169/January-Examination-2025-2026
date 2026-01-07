@@ -51,11 +51,19 @@ namespace January_Examination_2025_2026
             {
                 robotName = "Driver - DeliveryBot",
             };
+            allRobots.Add(HouseBot);
+            allRobots.Add(GardenMate);
+            allRobots.Add(DeliveryBot);
+            allRobots.Add(HouseMate);
+            allRobots.Add(FlyBot);
+            allRobots.Add(Driver);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             CreateRobot();
+
+            RobotListTBL.ItemsSource = allRobots;
         }
     }
 }
