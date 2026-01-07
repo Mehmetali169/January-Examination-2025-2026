@@ -11,6 +11,7 @@ using System.Windows.Shapes;
 
 namespace January_Examination_2025_2026
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -20,4 +21,5 @@ namespace January_Examination_2025_2026
         {
             InitializeComponent();
         }
+    }
 }
