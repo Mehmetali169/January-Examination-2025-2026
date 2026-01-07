@@ -12,15 +12,17 @@ namespace January_Examination_2025_2026
     public enum DeliveryMode { Walking, Driving, Flying }
 
 
-    internal class Robot
+    internal class Robot : HouseHoldRobot
     {
         public string robotName { get; set; }
 
         public double powerCapacityKWH { get; set; }
 
-       public double currentPowerKWH { get; set; }
+        public double currentPowerKWH { get; set; }
 
-       public double GetBatteryPercentage() => (currentPowerKWH / powerCapacityKWH) * 100;
+        public HouseholdSkill Skills { get; set; }
+
+        public double GetBatteryPercentage() => (currentPowerKWH / powerCapacityKWH) * 100;
 
         public string DisplayBatteryInformation()
         {
@@ -31,14 +33,20 @@ namespace January_Examination_2025_2026
             return $"{robotName} - {this.GetType().Name}";
         }
     }
-    public class HouseHoldRobot : Robot
-    {
-        public List<HouseholdSkill> Skills { get; set; }
+    public class HouseHoldRobot
+    { 
+        public HouseholdSkill Skills { get; set; }
 
-        public HouseHoldRobot{}
-    }
-    public class DeliveryRobot : Robot
-    {
 
     }
+    public class DeliveryRobot
+    {
+        //public Downloadskill()
+        //{
+
+        //}
+        public double maxLoadKG;
+
+    }
+}
 
