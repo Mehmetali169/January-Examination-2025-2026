@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>January_Examination_2025_2026</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="delivery-robot.png" />
+    <None Remove="household-robot.png" />
+    <None Remove="robot.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="delivery-robot.png" />
+    <Resource Include="household-robot.png" />
+    <Resource Include="robot.png" />
+  </ItemGroup>
+
+</Project>
